@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SweetTooth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html" class="logo">
+                    <img class="logo-img" src="images/logos/sweettoothlogo.png" alt="SweetTooth">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="allcakes.html">ALL CAKES</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="delivery.html">DELIVERY</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to Text">
+                <button class="btn"><a href="#">Search</a></button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>SweetTooth <br><span>Delicacies</span></h1>
+            <p class="par"> SweetTooth was founded with passion for spreading happiness, joy and fun. <br> We put smiles
+                on our customer's faces and removing frown. <br>We provide delicacies rich in different flavors.</p>
+            <button class="cn"><a href="signup.html">JOIN US</a></button>
+
+            <div class="form">
+                <h2>LogIn Here</h2>
+                <input type="email" id="loginEmail" placeholder="Enter Email">
+                <input type="password" id="loginPassword" placeholder="Enter Password">
+                <button class="btnn" onclick="handleLogin()">Log In</button>
+
+                <p class="link">Don't have an account<br>
+                    <a href="signup.html">Sign Up </a>
+                </p>
+                <p class="liw">Log In with</p>
+
+                <div class="icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function handleLogin() {
+            var email = document.getElementById('loginEmail').value.trim();
+            var password = document.getElementById('loginPassword').value.trim();
+
+            if (!email || !password) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Get stored credentials from localStorage
+            var storedEmail = localStorage.getItem('userEmail');
+            var storedPassword = localStorage.getItem('userPassword');
+            var userName = localStorage.getItem('userName');
+
+            // Check if credentials match
+            if (email === storedEmail && password === storedPassword) {
+                alert('Login successful! Welcome, ' + userName);
+                // Redirect to welcome/dashboard page
+                window.location.href = 'welcome.html';
+            } else {
+                alert('Invalid email or password. Please try again or sign up.');
+            }
+        }
+    </script>
+</body>
+
+</html>
