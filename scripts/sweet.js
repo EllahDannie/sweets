@@ -3,6 +3,7 @@ let cartCount = 0;
 function addToCart(button) {
     // Change button text
     button.textContent = 'Added ✓';
+    alert('Item added to cart!');
 
     // Add success styling
     button.style.backgroundColor = '#28a745';
@@ -18,10 +19,6 @@ function addToCart(button) {
         cartQuantityElement.textContent = cartCount;
     }
 
-    // Optional: Reset after 2 seconds
-    setTimeout(() => {
-        button.textContent = 'Add to Cart';
-        button.style.backgroundColor = '';
-        button.disabled = false;
-    }, 2000);
+
 }
+
