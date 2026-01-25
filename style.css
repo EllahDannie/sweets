@@ -124,12 +124,11 @@ ul li a:hover {
     font-size: 14px;
     color: white;
     font-weight: bold;
-    display: block;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* Mobile responsiveness */
