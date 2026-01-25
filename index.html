@@ -49,45 +49,40 @@
                 <p class="link">Don't have an account<br>
                     <a href="signup.html">Sign Up </a>
                 </p>
-                <p class="liw">Log In with</p>
-
-                <div class="icons">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <h2>Sign in with Google</h2>
+                <div class="iconn">
+                    <ion-icon name="logo-google"></ion-icon>
+                    
                 </div>
             </div>
         </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        function handleLogin() {
-            var email = document.getElementById('loginEmail').value.trim();
-            var password = document.getElementById('loginPassword').value.trim();
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            function handleLogin() {
+                var email = document.getElementById('loginEmail').value.trim();
+                var password = document.getElementById('loginPassword').value.trim();
 
-            if (!email || !password) {
-                alert('Please fill in all fields.');
-                return;
+                if (!email || !password) {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                // Get stored credentials from localStorage
+                var storedEmail = localStorage.getItem('userEmail');
+                var storedPassword = localStorage.getItem('userPassword');
+                var userName = localStorage.getItem('userName');
+
+                // Check if credentials match
+                if (email === storedEmail && password === storedPassword) {
+                    alert('Login successful! Welcome, ' + userName);
+                    // Redirect to welcome/dashboard page
+                    window.location.href = 'welcome.html';
+                } else {
+                    alert('Invalid email or password. Please try again or sign up.');
+                }
             }
-
-            // Get stored credentials from localStorage
-            var storedEmail = localStorage.getItem('userEmail');
-            var storedPassword = localStorage.getItem('userPassword');
-            var userName = localStorage.getItem('userName');
-
-            // Check if credentials match
-            if (email === storedEmail && password === storedPassword) {
-                alert('Login successful! Welcome, ' + userName);
-                // Redirect to welcome/dashboard page
-                window.location.href = 'welcome.html';
-            } else {
-                alert('Invalid email or password. Please try again or sign up.');
-            }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

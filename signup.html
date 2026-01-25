@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <div class="navbar">
             <div class="icon">
                 <h2 class="logo">SweetTooth</h2>
             </div>
-            
-     <div class="signup-form">
-        <h1>Sign Up</h1>
-        <form  onsubmit="redirectToLogin(event)">
-            <p>First Name</p>
-            <input type="text" name="fname" placeholder="First Name">
-            <p>Last Name</p>
-            <input type="text" name="lname" placeholder="Last Name">
-            <p>Email Address</p>
-            <input type="email" name="email" placeholder="Email Address">
-            <p>Password</p>
-            <input type="password" name="password" placeholder="Password">
-            <p>Confirm Password</p>
-            <input type="password" name="cpassword" placeholder="Confirm Password">
-            <button type="submit">Sign Up</button>
-        </form>
-        
-    </div>
 
-    </div></div>
-     
-  <script>
-function redirectToLogin(event) {
-    event.preventDefault();
-    // Get form values
-    var form = event.target;
-    var fname = form.fname.value.trim();
-    var lname = form.lname.value.trim();
-    var email = form.email.value.trim();
-    var password = form.password.value;
-    var cpassword = form.cpassword.value;
+            <div class="signup-form">
+                <h1>Sign Up</h1>
+                <form onsubmit="redirectToLogin(event)">
+                    <p>First Name</p>
+                    <input type="text" name="fname" placeholder="First Name">
+                    <p>Last Name</p>
+                    <input type="text" name="lname" placeholder="Last Name">
+                    <p>Email Address</p>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Password">
+                    <p>Confirm Password</p>
+                    <input type="password" name="cpassword" placeholder="Confirm Password">
+                    <button type="submit">Sign Up</button>
+                </form>
 
-    if (!fname || !lname || !email || !password || !cpassword) {
-        alert('Please fill in all fields.');
-        return;
-    }
-    if (password !== cpassword) {
-        alert('Passwords do not match.');
-        return;
-    }
-    // Store user credentials in localStorage
-    localStorage.setItem('userEmail', email);
-    localStorage.setItem('userPassword', password);
-    localStorage.setItem('userName', fname + ' ' + lname);
-    alert('Sign-up successful! Please log in.');
-    // Redirect to login page
-    window.location.href = 'index.html';
-}
-</script>  
+            </div>
+
+        </div>
+
+        <script>
+            function redirectToLogin(event) {
+                event.preventDefault();
+                // Get form values
+                var form = event.target;
+                var fname = form.fname.value.trim();
+                var lname = form.lname.value.trim();
+                var email = form.email.value.trim();
+                var password = form.password.value;
+                var cpassword = form.cpassword.value;
+
+                if (!fname || !lname || !email || !password || !cpassword) {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+                if (password !== cpassword) {
+                    alert('Passwords do not match.');
+                    return;
+                }
+                // Store user credentials in localStorage
+                localStorage.setItem('userEmail', email);
+                localStorage.setItem('userPassword', password);
+                localStorage.setItem('userName', fname + ' ' + lname);
+                alert('Sign-up successful! Please log in.');
+                // Redirect to login page
+                window.location.href = 'index.html';
+            }
+        </script>
 </body>
+
 </html>

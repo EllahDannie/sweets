@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/sweet.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html" class="logo">
+                <img class="logo-img" src="images/logos/sweettoothlogo.png" alt="SweetTooth">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="allcakes.html">ALL CAKES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="delivery.html">DELIVERY</a></li>
+            </ul>
+        </div>
+        <a class="cart-link header-link" href="checkout.html">
+            <img class="cart-icon" src="images/icons/cart.png">
+            <div class="cart-quantity js-cart-quantity">0</div>
+            <div class="cart-text">Cart</div>
+        </a>
+    </div>
+
+    <div class="menu-page">
+        <h1>Our Delicious Menu</h1>
+        <div class="search-bar">
+            <input class="srch" type="search" name="" placeholder="Search for cakes...">
+            <button class="btn"><a href="#">Search</a></button>
+        </div>
+        <h2>Fruity Cakes</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/strawberry.jfif" alt="Strawberry Cake">
+                <h3>Strawberry Cake</h3>
+                <p>A moist and flavorful cake topped with fresh strawberries and cream.</p>
+                <p>KES 3,225</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/mango.jfif" alt="Mango Cake">
+                <h3>Mango Cake</h3>
+                <p>Tropical delight with juicy mango pieces and a light sponge base.</p>
+                <p>KES 3,612</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/peach.jfif" alt="Peach Cake">
+                <h3>Peach Cake</h3>
+                <p>Sweet and tangy peach cake with a caramelized topping.</p>
+                <p>KES 3,354</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/orange.jfif" alt="Orange Cake">
+                <h3>Orange Cake</h3>
+                <p>Zesty orange cake with a citrus glaze and fresh orange zest.</p>
+                <p>KES 3,096</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/lemon.jfif" alt="Lemon Cake">
+                <h3>Lemon Cake</h3>
+                <p>Zesty lemon cake with a tangy glaze and fresh lemon zest.</p>
+                <p>KES 3,120</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Flavoured Cakes</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/chocolate.jfif" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and decadent chocolate cake with chocolate frosting.</p>
+                <p>KES 3,870</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/vanila.jfif" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>Classic vanilla cake with smooth vanilla buttercream.</p>
+                <p>KES 2,838</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/redvelvet.jfif" alt="Red Velvet Cake">
+                <h3>Red Velvet Cake</h3>
+                <p>Velvety red cake with cream cheese frosting.</p>
+                <p>KES 3,483</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/coffee.jfif" alt="Coffee Cake">
+                <h3>Coffee Cake</h3>
+                <p>Moist coffee-infused cake with espresso frosting.</p>
+                <p>KES 3,225</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/custard.jfif" alt="Custard Cake">
+                <h3>Custard Cake</h3>
+                <p>Rich custard cake with a creamy custard frosting.</p>
+                <p>KES 3,447</p>
+                <button class="cart-btn js" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Occassion Cakes</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/birthday.jfif" alt="Birthday Cake">
+                <h3>Birthday Cake</h3>
+                <p>Customizable birthday cake with your choice of flavors and decorations.</p>
+                <p>KES 4,515</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/wedding.jfif" alt="Wedding Cake">
+                <h3>Wedding Cake</h3>
+                <p>Elegant multi-tier wedding cake with intricate designs.</p>
+                <p>KES 19,350</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/anniverasary.jfif" alt="Anniversary Cake">
+                <h3>Anniversary Cake</h3>
+                <p>Romantic anniversary cake with personalized messages.</p>
+                <p>KES 5,160</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/graduation.jfif" alt="Graduation Cake">
+                <h3>Graduation Cake</h3>
+                <p>Celebrate achievements with a themed graduation cake.</p>
+                <p>KES 4,128</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Custom-Made Cakes</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/ds.jfif" alt="Personalized Design Cake">
+                <h3>Personalized Design Cake</h3>
+                <p>Design your own cake with custom flavors, characters, shapes, and decorations.</p>
+                <p>KES 6,450+</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/anime.jfif" alt="Anime-Themed Cake">
+                <h3>Anime-Themed Cake</h3>
+                <p>Anime-Themed cake featuring Naruto, One Piece, or other anime.</p>
+                <p>KES 5,805+</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/nature.jfif" alt="Nature Cake">
+                <h3>Nature Cake</h3>
+                <p>Cake made out of nature, waterfalls, trees, etc</p>
+                <p>KES 7,095</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/football.jfif" alt="Football Cake">
+                <h3>Football Cake</h3>
+                <p>Sports-themed cake featuring football, basketball, or other sports.</p>
+                <p>KES 6,210+</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Other Delicacies</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/cookie.jfif" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Chewy chocolate chip cookies baked fresh daily.</p>
+                <p>KES 645/dozen</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/brownie.jfif" alt="Brownies">
+                <h3>Brownies</h3>
+                <p>Fudgy brownies with walnuts and chocolate chips.</p>
+                <p>KES 1,032/pan</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/muffins.jfif" alt="Muffins">
+                <h3>Muffins</h3>
+                <p>Assorted muffins in various flavors and toppings.</p>
+                <p>KES 387 each</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/pie.jfif" alt="Pies">
+                <h3>Pies</h3>
+                <p>Homemade pies including apple, cherry, and pumpkin.</p>
+                <p>KES 2,580 each</p>
+                <button class="cart-btn js-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
