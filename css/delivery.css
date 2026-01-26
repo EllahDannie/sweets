@@ -50,6 +50,7 @@ header {
 .menu ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -57,12 +58,14 @@ header {
 
 .menu li {
     margin: 0 20px;
+    justify-content: center;
 }
 
 .menu a {
     text-decoration: none;
     color: white;
     font-family: Arial;
+    justify-content: center;
     font-weight: bolder;
     font-size: 20px;
     transition: 0.4s ease-in-out;

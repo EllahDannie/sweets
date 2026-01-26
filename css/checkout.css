@@ -5,6 +5,12 @@
     padding: 20px;
 }
 
+header {
+    background-color: rgb(161, 101, 10);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .checkout-container {
     flex: 1;
     padding: 20px;
