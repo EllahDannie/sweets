@@ -43,7 +43,7 @@
                 <h2>LogIn Here</h2>
                 <input type="email" id="loginEmail" placeholder="Enter Email">
                 <input type="password" id="loginPassword" placeholder="Enter Password">
-                <button class="btnn" onclick="handleLogin()">Log In</button>
+                <button class="btnn" onclick="handleLogin()"><a href="allcakes.html">Log In</a></button>
 
                 <p class="link">Don't have an account<br>
                     <a href="signup.html" class="signup-btn">Sign Up </a>
@@ -64,16 +64,15 @@
                 return;
             }
 
-            // Get stored credentials from localStorage
+
             var storedEmail = localStorage.getItem('userEmail');
             var storedPassword = localStorage.getItem('userPassword');
             var userName = localStorage.getItem('userName');
 
-            // Check if credentials match
             if (email === storedEmail && password === storedPassword) {
                 alert('Login successful! Welcome, ' + userName);
-                // Redirect to welcome/dashboard page
-                window.location.href = 'welcome.html';
+
+                window.location.href = 'allcakes.html';
             } else {
                 alert('Invalid email or password. Please try again or sign up.');
             }
