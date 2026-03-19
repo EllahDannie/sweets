@@ -79,7 +79,7 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ===== PAGE INTRO ===== */
+/*  PAGE INTRO  */
 .page-intro {
     text-align: center;
     padding: 3rem 2rem;
@@ -101,7 +101,7 @@ header {
     color: #666;
 }
 
-/* ===== DELIVERY CONTAINER ===== */
+/*  DELIVERY CONTAINER  */
 .delivery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -158,7 +158,7 @@ header {
     margin-right: 0.5rem;
 }
 
-/* ===== NOTICE ===== */
+/* NOTICE  */
 .notice {
     background-color: rgb(161, 101, 10);
     color: white;
@@ -174,7 +174,7 @@ header {
     line-height: 1.8;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER */
 footer {
     background-color: #333;
     color: white;
@@ -186,75 +186,4 @@ footer {
 footer span {
     color: rgb(161, 101, 10);
     font-weight: bold;
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-@media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
-
-    .menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .menu li {
-        margin: 5px 10px;
-    }
-
-    .page-intro {
-        padding: 2rem 1rem;
-    }
-
-    .page-intro h1 {
-        font-size: 2rem;
-    }
-
-    .delivery-container {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-
-    .delivery-card {
-        padding: 1.5rem;
-    }
-
-    .notice {
-        padding: 1.5rem 1rem;
-    }
-
-    footer {
-        padding: 1.5rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 24px;
-    }
-
-    .logo-img {
-        width: 100px;
-    }
-
-    .menu a {
-        font-size: 16px;
-        padding: 8px 12px;
-    }
-
-    .page-intro h1 {
-        font-size: 1.8rem;
-    }
-
-    .delivery-card h3 {
-        font-size: 1.3rem;
-    }
-
-    .notice p {
-        font-size: 1rem;
-    }
 }
