@@ -1,0 +1,131 @@
+:root {
+            --primary-color: #b97a17;
+            --dark-bg: #1e1e1e;
+            --light-text: #ffsffff;
+            --muted-text: #d6d6d6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: var(--dark-bg);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: var(--light-text);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* ===== PAGE INTRO ===== */
+        .page-intro {
+            padding: 60px 40px 40px;
+            text-align: center;
+        }
+
+        .page-intro h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .page-intro p {
+            color: #666;
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* ===== DELIVERY SECTIONS ===== */
+        .delivery-container {
+            padding: 20px 40px 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .delivery-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .delivery-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .delivery-card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .delivery-card ul {
+            padding-left: 18px;
+            margin-top: 10px;
+        }
+
+        .delivery-card li {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        /* ===== NOTICE SECTION ===== */
+        .notice {
+            background-color: #fff3e0;
+            border-left: 5px solid var(--primary-color);
+            padding: 20px 40px;
+            margin: 0 40px 60px;
+            border-radius: 4px;
+        }
+
+        .notice p {
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--muted-text);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--primary-color);
+        }
