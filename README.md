@@ -5,7 +5,7 @@ It allows users to sign up and sign in to explore the delicacies and buy them.
 
 ## Figma Design
 View the Figma design here! 
-https://www.figma.com/team_invite/redeem/YCkfDQevtRvkg2zzOU4z0P?t=SlNYjLOqBa6pIkoc-21
+
 
 ## Contains
 1. Home Page
